@@ -1,12 +1,11 @@
 import express from 'express';
-import db from './database/connection';
-import converHourToMinutes from './utils/convertHourToMinutes';
+
+import ClassesController from './controllers/ClassesController';
 
 const routes= express.Router();
+const classesController = new ClassesController();
 
-
-
-
-routes.post('/classes', );
+routes.post('/classes', classesController.create);
+routes.get('/classes', classesController.index);
 
 export default routes;
