@@ -5,7 +5,7 @@
   "author": "AdamAugustinsky <40921659+AdamAugustinsky@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "start": "tsnd --transpile-only --ignore-watch node_moudules --respawn src/server.ts",
+    "start": "tsnd --transpile-only --ignore-watch node_moudules --respawn src/utils/server.ts",
     "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
     "knex:migrate:rollback": "knex --knexfile knexfile.ts migrate:rollback"
   },
